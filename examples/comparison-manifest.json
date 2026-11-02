@@ -1,0 +1,37 @@
+{
+  "stage": "schematic",
+  "revision": "schematic-r01",
+  "asset": "../schematics/assembly.svg",
+  "views": [
+    {
+      "id": "front-drawing",
+      "image": "../schematics/front.png",
+      "view": "front",
+      "state": "stored"
+    },
+    {
+      "id": "side-section",
+      "image": "../schematics/side-section.png",
+      "view": "side section",
+      "state": "stored"
+    }
+  ],
+  "comparisons": [
+    {
+      "source": "front",
+      "candidate": "front-drawing",
+      "region": "interface",
+      "camera": "matched",
+      "reference_crop": [0, 0, 100, 100],
+      "candidate_crop": [0, 0, 100, 100],
+      "note": "Replace example crops with the same interface in both images."
+    },
+    {
+      "source": "side",
+      "candidate": "side-section",
+      "region": "interface",
+      "camera": "diagnostic",
+      "note": "Section versus exterior: compare supported boundaries; hidden internals remain unverified."
+    }
+  ]
+}

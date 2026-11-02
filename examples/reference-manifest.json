@@ -1,0 +1,48 @@
+{
+  "sources": [
+    {
+      "id": "front",
+      "image": "front.jpg",
+      "view": "front",
+      "provenance": "Replace with source URL or user-supplied description"
+    },
+    {
+      "id": "side",
+      "image": "side.jpg",
+      "view": "side",
+      "provenance": "Replace with source URL or user-supplied description"
+    },
+    {
+      "id": "rear",
+      "image": "rear.jpg",
+      "view": "rear",
+      "provenance": "Replace with source URL or user-supplied description"
+    }
+  ],
+  "regions": [
+    {
+      "id": "interface",
+      "question": "How do these components connect?",
+      "observations": [
+        {
+          "source": "front",
+          "crop": [
+            0,
+            0,
+            100,
+            100
+          ]
+        },
+        {
+          "source": "side",
+          "crop": [
+            0,
+            0,
+            100,
+            100
+          ]
+        }
+      ]
+    }
+  ]
+}
